@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+
+<body>
+  <span>Math.random()</span> is known as a method because it is simply the addition of object i.e Math and random() i.e function together with a dot notation(.)
+
+
+
+  <script>
+/*
+  const product = {
+    name: 'sock',
+    price: 1090
+  };
+
+  console.log(typeof product);
+  console.log(product.name);
+  console.log(product.price);
+
+
+
+  product.name = 'Ganiyu Hassan Taiwo.';
+  console.log(product.name);
+
+  product.newProperty = !true;
+  console.log(product.newProperty);
+
+
+  delete product.newProperty;
+  console.log(product);
+  
+
+  const product2 = {
+    name: 'shirt',
+    'God\'s-time': 'Will go for Hajj next year inshallah before i travel out for my masters and progress with my life.',
+    plans: {
+      gym: 'always',
+      read: 'Definitely',
+      MarriageOrRelationship: 'marriage',
+      master: 'Yep'
+    },
+    fun: function function1() {
+      console.log('function inside the object');
+    }
+  };
+
+  console.log(product2);
+  console.log(product2.name);
+  console.log(product2['name']);
+  console.log(product2['God\'s-time']);
+  console.log(product2.plans['gym']);
+  product2.fun();
+
+  console.log(typeof console.log);
+  console.log(typeof console);
+  console.log(typeof Math.random()); 
+
+
+  console.log( JSON.stringify(product2));
+
+  const jsonString = JSON.stringify(product2);
+
+  console.log(JSON.parse(jsonString));
+*/
+
+
+console.log('hello'.length);
+console.log('Ganiyu Hassan Taiwo'.toUpperCase());
+
+
+  const object1 = {
+     message: 'Hello'
+  };
+
+  const object2 = object1;
+
+  object1.message = 'Be your True self always!';
+  console.log(object1.message);
+  console.log(object2.message);
+
+
+ const object3 = {
+  message: 'Be your True self always!'
+ };
+
+ console.log(object3 === object1);
+ console.log(object2 === object1);
+
+ const object4 = {
+  message: 'True self always!',
+  price: 799
+ };
+ //const message = object4.message;   (Below is the shortcut to assign existing variable in an object with similar name to a new variable that was just created.)
+ const { message, price } = object4;
+ console.log(message);
+ console.log(price);
+
+ const object5 = {
+     //message: message  (Below is the shortcut to assign a variable that as similar name to it value)
+     message,
+    
+     /*method: function function1() {
+     console.log('method');
+     }  
+     (Below is a shortcut to assign function to a variable in an object, the bracket does the same thing as the function so we don't need to write it again to save time, space, efficiency and make our code neater.) */ 
+     
+     method() {
+      console.log('method');
+     }
+ };
+ console.log(object5);
+ object5.method();
+
+  </script>
+
+</body>
+
+</html>
